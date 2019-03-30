@@ -1,4 +1,5 @@
 xcode-select --install
+brew install zsh #get the latest
 brew install yarn python3 sympy go coreutils octave neovim
 brew install ruby --with-doc
 brew install sleepwatcher #reconfigure sleepwatcher config to point to binary

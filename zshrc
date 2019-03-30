@@ -20,11 +20,12 @@ eval `gdircolors $DOTFILES/zsh/dircolors.ansi-universal` #https://github.com/see
 #************************************************************************
 # Path to your oh-my-zsh installation.
 export ZSH=$DOTFILES/oh-my-zsh
+export ZSH_CUSTOM=$ZSH/custom
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="theunraveler"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -68,7 +69,11 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+	git
+	zsh-syntax-highlighting
+	zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 
