@@ -1,0 +1,4 @@
+# To run: mntsshfs <user>@<FQDN>:/ <dir_name>
+
+mkdir -p /Volumes/$2;
+sshfs $1 /Volumes/$2 && open /Volumes/$2;
