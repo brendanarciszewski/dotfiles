@@ -2,7 +2,7 @@
 export DOTFILES=$HOME/dotfiles
 export XDG_CONFIG_HOME=$HOME/.config
 export GOPATH=$HOME/Development/go
-export PATH="$HOME/.cargo/bin:$GOPATH/bin:$PATH:/usr/local/opt/sleepwatcher/sbin:/usr/local/opt/go/libexec/bin"
+export PATH="$HOME/.cargo/bin:$GOPATH/bin:/usr/local/sbin:$PATH"
 export EDITOR="vim"
 export PYTHON="/usr/local/bin/python3" #for symbolic pkg in octave
 alias gpg="gpg2" #Git fix
