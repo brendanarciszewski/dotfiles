@@ -1,0 +1,11 @@
+
+
+"Set theme based on GUI
+colorscheme solarized
+let g:airline_theme='solarized'
+if has('gui_running')
+	set background=light
+	set guifont=Source\ Code\ Pro:h12
+else
+	set background=dark
+endif
