@@ -41,7 +41,7 @@ Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
 
 "" Go Lang
-Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+"" Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 
 "" Exit Plug
 call plug#end()
