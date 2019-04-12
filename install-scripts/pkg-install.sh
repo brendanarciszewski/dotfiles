@@ -22,4 +22,8 @@ brew tap bazelbuild/tap
 brew tap-pin bazelbuild/tap
 brew install bazel
 
+
 gem install jekyll bundler
+
+
+cargo install ripgrep
