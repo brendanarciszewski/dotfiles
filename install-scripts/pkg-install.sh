@@ -10,10 +10,11 @@ brew tap caskroom/cask
 brew cask install master-password alfred malwarebytes coconutbattery
 brew cask install google-chrome firefox torbrowser transmission
 brew cask install handbrake dropbox google-backup-and-sync onedrive
-brew cask install github-desktop gitkraken arduino mactex texmaker sublime-text #install ‘Six', 'LaTeXTools', 'LaTeXTab', 'Floobits', 'Print to HTML'
+brew cask install github-desktop gitkraken arduino sublime-text #install ‘Six', 'LaTeXTools', 'LaTeXTab', 'Floobits', 'Print to HTML'
+brew cask install mactex texstudio
 brew cask install skype slack discord iina spotify
 brew cask install copyq etcher the-unarchiver wireshark imageoptim cheatsheet #get McGimp instead of gimp
-brew cask install goland intellij-idea clion java anki
+brew cask install intellij-idea clion java anki
 
 brew cask install osxfuse
 brew install sshfs e2fsprogs #then download https://github.com/gpz500/fuse-ext2/releases
@@ -26,4 +27,6 @@ brew install bazel
 gem install jekyll bundler
 
 
+cargo +nightly install racer
 cargo install ripgrep
+
