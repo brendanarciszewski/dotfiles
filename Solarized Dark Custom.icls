@@ -1,9 +1,9 @@
 <scheme name="Solarized Dark Custom" version="142" parent_scheme="Darcula">
   <metaInfo>
-    <property name="created">2019-07-12T13:26:51</property>
+    <property name="created">2019-07-13T13:45:55</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2019.1.3.0.0</property>
-    <property name="modified">2019-07-12T13:26:54</property>
+    <property name="modified">2019-07-13T13:46:06</property>
     <property name="originalScheme">Solarized Dark Custom</property>
   </metaInfo>
   <colors>
@@ -590,6 +590,12 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
+    <option name="DART_SYMBOL_LITERAL">
+      <value>
+        <option name="FOREGROUND" value="6c71c4" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
     <option name="DART_TYPE_PARAMETER">
       <value>
         <option name="FOREGROUND" value="cb4b16" />
@@ -762,7 +768,7 @@
     <option name="DEFAULT_REASSIGNED_LOCAL_VARIABLE">
       <value>
         <option name="FOREGROUND" value="6c71c4" />
-        <option name="EFFECT_COLOR" value="93a1a1" />
+        <option name="EFFECT_COLOR" value="586e75" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -770,7 +776,7 @@
       <value>
         <option name="FOREGROUND" value="6c71c4" />
         <option name="FONT_TYPE" value="2" />
-        <option name="EFFECT_COLOR" value="93a1a1" />
+        <option name="EFFECT_COLOR" value="586e75" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -1176,8 +1182,16 @@
     <option name="HTML_ATTRIBUTE_NAME" baseAttributes="DEFAULT_ATTRIBUTE" />
     <option name="HTML_ATTRIBUTE_VALUE" baseAttributes="DEFAULT_STRING" />
     <option name="HTML_ENTITY_REFERENCE" baseAttributes="DEFAULT_ENTITY" />
-    <option name="HTML_TAG" baseAttributes="DEFAULT_TAG" />
-    <option name="HTML_TAG_NAME" baseAttributes="DEFAULT_KEYWORD" />
+    <option name="HTML_TAG">
+      <value>
+        <option name="FOREGROUND" value="859900" />
+      </value>
+    </option>
+    <option name="HTML_TAG_NAME">
+      <value>
+        <option name="FOREGROUND" value="839496" />
+      </value>
+    </option>
     <option name="HYPERLINK_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="268bd2" />
@@ -1207,20 +1221,20 @@
     <option name="INLINE_PARAMETER_HINT">
       <value>
         <option name="FOREGROUND" value="73642" />
-        <option name="BACKGROUND" value="93a1a1" />
+        <option name="BACKGROUND" value="657b83" />
       </value>
     </option>
     <option name="INLINE_PARAMETER_HINT_CURRENT">
       <value>
-        <option name="FOREGROUND" value="73642" />
-        <option name="BACKGROUND" value="93a1a1" />
+        <option name="FOREGROUND" value="657b83" />
+        <option name="BACKGROUND" value="73642" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="INLINE_PARAMETER_HINT_HIGHLIGHTED">
       <value>
         <option name="FOREGROUND" value="73642" />
-        <option name="BACKGROUND" value="93a1a1" />
+        <option name="BACKGROUND" value="839496" />
       </value>
     </option>
     <option name="IVAR">
@@ -3189,9 +3203,17 @@
     <option name="XML_ATTRIBUTE_NAME" baseAttributes="DEFAULT_ATTRIBUTE" />
     <option name="XML_ENTITY_REFERENCE" baseAttributes="DEFAULT_ENTITY" />
     <option name="XML_PROLOGUE" baseAttributes="TEXT" />
-    <option name="XML_TAG" baseAttributes="DEFAULT_TAG" />
+    <option name="XML_TAG">
+      <value>
+        <option name="FOREGROUND" value="859900" />
+      </value>
+    </option>
     <option name="XML_TAG_DATA" baseAttributes="TEXT" />
-    <option name="XML_TAG_NAME" baseAttributes="DEFAULT_KEYWORD" />
+    <option name="XML_TAG_NAME">
+      <value>
+        <option name="FOREGROUND" value="839496" />
+      </value>
+    </option>
     <option name="XPATH.FUNCTION">
       <value>
         <option name="FOREGROUND" value="b58900" />
@@ -3345,10 +3367,20 @@
     <option name="org.rust.MACRO">
       <value>
         <option name="FOREGROUND" value="268bd2" />
-        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="org.rust.MUT_BINDING">
+      <value>
+        <option name="EFFECT_COLOR" value="586e75" />
+        <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="org.rust.MUT_PARAMETER" baseAttributes="DEFAULT_PARAMETER" />
+    <option name="org.rust.PRIMITIVE_TYPE">
+      <value>
+        <option name="FOREGROUND" value="cb4b16" />
+      </value>
+    </option>
     <option name="org.rust.SELF_PARAMETER">
       <value>
         <option name="FOREGROUND" value="6c71c4" />
@@ -3359,6 +3391,9 @@
       <value>
         <option name="FOREGROUND" value="cb4b16" />
       </value>
+    </option>
+    <option name="org.rust.UNSAFE_CODE">
+      <value />
     </option>
   </attributes>
 </scheme>
