@@ -14,7 +14,7 @@ brew cask install github-desktop gitkraken arduino sublime-text #install ‘Six'
 brew cask install mactex texstudio
 brew cask install skype slack discord iina spotify
 brew cask install copyq etcher the-unarchiver wireshark imageoptim cheatsheet #get McGimp instead of gimp
-brew cask install intellij-idea clion clang-format java anki
+brew cask install alacritty intellij-idea clion clang-format java anki
 
 brew cask install osxfuse
 brew install sshfs e2fsprogs #then download https://github.com/gpz500/fuse-ext2/releases
