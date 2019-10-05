@@ -29,6 +29,10 @@ brew cask install\
     basictex\
     sublime-text #install ‘Six', 'LaTeXTools', 'LaTeXTab', 'Floobits', 'Print to HTML'
 
+sudo tlmgr update --self
+sudo tlmgr install latexmk
+
+
 #Terminal & Tools
 brew cask install\
     alacritty\
