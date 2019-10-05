@@ -26,8 +26,7 @@ brew tap caskroom/cask
 brew cask install\
     intellij-idea\
     clion\
-    mactex\
-    texstudio\
+    basictex\
     sublime-text #install ‘Six', 'LaTeXTools', 'LaTeXTab', 'Floobits', 'Print to HTML'
 
 #Terminal & Tools
