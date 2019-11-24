@@ -1,3 +1,4 @@
+#!/bin/bash
 xcode-select --install
 brew install zsh
 brew install\
@@ -31,7 +32,11 @@ brew cask install\
 
 sudo tlmgr update --self
 sudo tlmgr install latexmk
-
+sudo tlmgr install dvipng
+sudo tlmgr install enumitem
+sudo tlmgr install xifthen
+sudo tlmgr install ifmtarg
+sudo tlmgr install lm-math
 
 #Terminal & Tools
 brew cask install\
