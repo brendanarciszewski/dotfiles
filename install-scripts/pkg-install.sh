@@ -1,7 +1,7 @@
 xcode-select --install
 brew install zsh
 brew install\
-    python3\
+    pyenv\
     go\
     octave\
     rust\
@@ -78,4 +78,10 @@ gem install jekyll bundler
 
 cargo +nightly install racer
 cargo install ripgrep
+
+
+mkdir ~/.pyenv
+mkdir ~/.pyenv/versions
+ln -s `brew --cellar python`/* ~/.pyenv/versions
+ln -s `brew --cellar python@2`/* ~/.pyenv/versions
 
