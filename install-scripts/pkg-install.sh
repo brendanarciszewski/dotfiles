@@ -45,6 +45,16 @@ brew cask install\
     arduino\
     clang-format\
     java\
+    coolterm\
+
+#Quicklook
+brew cask install\
+    qlcolorcode\
+    qlstephen\
+    qlmarkdown\
+    quicklook-json\
+    qlimagesize\
+    qlvideo\
 
 #Generic Apps
 brew cask install\
