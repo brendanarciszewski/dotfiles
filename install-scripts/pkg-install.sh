@@ -19,6 +19,10 @@ brew install\
     irssi\
     watch\
 
+brew install\
+    pdftk-java\
+    qpdf\
+
 brew install sleepwatcher #reconfigure sleepwatcher config to point to binary
 brew services start sleepwatcher
 
