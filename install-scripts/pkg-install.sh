@@ -35,12 +35,19 @@ brew cask install\
     sublime-text #install ‘Six', 'LaTeXTools', 'LaTeXTab', 'Floobits', 'Print to HTML'
 
 sudo tlmgr update --self
-sudo tlmgr install latexmk
-sudo tlmgr install dvipng
-sudo tlmgr install enumitem
-sudo tlmgr install xifthen
-sudo tlmgr install ifmtarg
-sudo tlmgr install lm-math
+sudo tlmgr install\
+    latexmk\
+    dvipng\
+    enumitem\
+    xifthen\
+    ifmtarg\
+    lm-math\
+    anyfontsize\
+    sourcesanspro\
+    tcolorbox\
+    trimspaces\
+    environ\
+
 
 #Terminal & Tools
 brew cask install\
@@ -75,6 +82,7 @@ brew cask install\
     google-backup-and-sync\
     onedrive\
     skype\
+    zoomus\
     slack\
     discord\
     iina\
