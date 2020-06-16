@@ -105,6 +105,8 @@ gem install jekyll bundler
 
 cargo +nightly install racer
 cargo install ripgrep
+cargo install cargo-valgrind
+brew install --HEAD https://raw.githubusercontent.com/LouisBrunner/valgrind-macos/master/valgrind.rb
 
 
 mkdir ~/.pyenv
