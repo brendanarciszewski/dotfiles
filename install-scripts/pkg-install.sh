@@ -19,6 +19,24 @@ brew install\
     irssi\
     watch\
 
+brew tap cjbassi/ytop
+brew install\
+    sd\
+    dust\
+    ripgrep\
+    tokei\
+    hyperfine\
+    ytop\
+    tealdeer\
+    bandwhich\
+    zoxide\
+    procs\
+    fd\
+    exa\
+    bat\
+    delta\
+    sk\ 
+
 brew install\
     pdftk-java\
     qpdf\
