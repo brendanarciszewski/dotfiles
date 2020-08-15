@@ -1,15 +1,29 @@
 [user]
-	email = git@brendanarciszewski.ca
-	name = Brendan Arciszewski
+    email = git@brendanarciszewski.ca
+    name = Brendan Arciszewski
+
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+
 [core]
     excludesfile = /Users/brendanarciszewski/.gitignore_global
+    pager = delta
+
+[delta]
+    syntax-theme = Solarized (dark)
+    line-numbers = true
+    navigate = true
+
+[interactive]
+    diffFilter = delta --color-only
+
 [diff]
+    colorMoved = default
     tool = vscode-difftool
+
 [difftool "vscode-difftool"]
     cmd = code --wait --diff $LOCAL $REMOTE
 
