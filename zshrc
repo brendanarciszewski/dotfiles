@@ -17,6 +17,7 @@ alias vi="vim"
 alias dvipdf="dvipdfmx"
 eval `gdircolors $DOTFILES/zsh/dircolors.ansi-universal` #https://github.com/seebi/dircolors-solarized
 
+export BAT_THEME=$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo "Solarized (dark)" || echo "Solarized (light)")
 
 #************************************************************************
 # .oh-my-zsh
