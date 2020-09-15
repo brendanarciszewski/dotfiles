@@ -1,0 +1,4 @@
+VM_NAME="$1"
+DISK_PREFIX=`diskutil list | awk '{if ($5 == "BOOTCAMP") {gsub(/s[0-9]$/, ""); print $8}}'`
+sudo chown brendanarciszewski /dev/${DISK_PREFIX}*
+vboxmanage startvm "$VM_NAME"
