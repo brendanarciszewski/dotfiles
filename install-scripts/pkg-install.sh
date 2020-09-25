@@ -37,6 +37,7 @@ brew install\
     git-delta\
     sk\
     nushell\
+    freerdp\
 
 brew install\
     pdftk-java\

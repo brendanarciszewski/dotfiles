@@ -1,0 +1,2 @@
+# must be connected to cisco vpn
+xfreerdp /v:engterm.uwaterloo.ca /u:$1@nexus
