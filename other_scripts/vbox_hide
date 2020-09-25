@@ -7,7 +7,7 @@ VBoxManage setextradata $VM_NAME "VBoxInternal/Devices/efi/0/Config/DmiBIOSVersi
 
 VBoxManage setextradata $VM_NAME "VBoxInternal/Devices/efi/0/Config/DmiSystemVendor" "Apple Inc."
 #VBoxManage setextradata $VM_NAME "VBoxInternal/Devices/efi/0/Config/DmiSystemSerial" $rand9
-# I uncommented the above line and replaced the serial number using dmidecode
+# I uncommented the above line and replaced the serial number using `dmidecode -s system-serial-number`
 # (brew install cavaliercoder/dmidecode/dmidecode). It was not 9 digits.
 # (The number does not need to be accurate. I am unsure if it is even needed.)
 
