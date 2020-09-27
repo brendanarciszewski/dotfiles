@@ -3,7 +3,7 @@ export DOTFILES=$HOME/dotfiles
 export XDG_CONFIG_HOME=$HOME/.config
 export GOPATH=$HOME/Development/go
 # Custom Scripts, Cargo, Go, PyPoetry, Flutter, Homebrew
-export PATH="$DOTFILES/other_scripts:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.poetry/bin:$HOME/flutter/bin:/usr/local/sbin:$PATH"
+export PATH="$DOTFILES/scripts:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.poetry/bin:$HOME/flutter/bin:/usr/local/sbin:$PATH"
 export EDITOR="vim"
 export PYTHON="/usr/local/bin/python3" #for symbolic pkg in octave
 alias gpg="gpg2" #Git fix
