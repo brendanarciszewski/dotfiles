@@ -1,0 +1,3 @@
+#very dangerous -be careful
+diskutil list | awk '/disk[2-9]s/{print $NF}' | xargs -L1 diskutil unmount
+#/usr/local/opt/sleepwatcher/sbin/sleepwatcher

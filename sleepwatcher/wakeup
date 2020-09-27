@@ -1,0 +1,3 @@
+sleep 5
+diskutil list | awk '/disk[2-9]s/{print $NF}' | xargs -L1 diskutil mount
+#/usr/local/opt/sleepwatcher/sbin/sleepwatcher
