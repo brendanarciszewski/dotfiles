@@ -1,6 +1,9 @@
 #!/bin/bash
 xcode-select --install
-brew install zsh
+brew install\
+    zsh\
+    starship\
+
 brew install\
     pyenv\
     go\
@@ -46,7 +49,6 @@ brew install\
 brew install sleepwatcher #reconfigure sleepwatcher config to point to binary
 brew services start sleepwatcher
 
-brew tap caskroom/cask
 #Editors
 brew cask install\
     intellij-idea\
@@ -72,7 +74,6 @@ sudo tlmgr install\
 #Terminal & Tools
 brew cask install\
     alacritty\
-    gitkraken\
     arduino\
     clang-format\
     java\
@@ -80,7 +81,6 @@ brew cask install\
 
 #Quicklook
 brew cask install\
-    qlcolorcode\
     qlstephen\
     qlmarkdown\
     quicklook-json\
@@ -123,7 +123,6 @@ brew install sshfs e2fsprogs #then download https://github.com/gpz500/fuse-ext2/
 gem install jekyll bundler
 
 
-cargo +nightly install racer
 cargo install cargo-valgrind
 brew install --HEAD https://raw.githubusercontent.com/LouisBrunner/valgrind-macos/master/valgrind.rb
 
