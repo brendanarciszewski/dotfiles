@@ -3,6 +3,7 @@ xcode-select --install
 brew install\
     zsh\
     starship\
+    sheldon\
 
 brew install\
     pyenv\

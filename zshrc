@@ -21,4 +21,5 @@ export BAT_THEME=$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null 
 
 eval "$(starship init zsh)"
 eval "$(pyenv init -)"
-
+export SHELDON_CONFIG_DIR=$DOTFILES/sheldon
+source <(sheldon source)
