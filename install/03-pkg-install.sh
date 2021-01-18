@@ -1,7 +1,6 @@
 #!/bin/bash
 xcode-select --install
 brew install\
-    zsh\
     starship\
     sheldon\
 
@@ -42,6 +41,7 @@ brew install\
     sk\
     nushell\
     freerdp\
+    shfmt\
 
 brew install\
     pdftk-java\
@@ -51,11 +51,11 @@ brew install sleepwatcher #reconfigure sleepwatcher config to point to binary
 brew services start sleepwatcher
 
 #Editors
-brew cask install\
+brew install --cask\
     intellij-idea\
     clion\
     basictex\
-    sublime-text #install ‘Six', 'LaTeXTools', 'LaTeXTab', 'Floobits', 'Print to HTML'
+    vscodium\
 
 sudo tlmgr update --self
 sudo tlmgr install\
@@ -73,15 +73,16 @@ sudo tlmgr install\
 
 
 #Terminal & Tools
-brew cask install\
+brew install --cask\
     alacritty\
     arduino\
     clang-format\
     java\
     coolterm\
+    hammerspoon\
 
 #Quicklook
-brew cask install\
+brew install --cask\
     qlstephen\
     qlmarkdown\
     quicklook-json\
@@ -89,7 +90,7 @@ brew cask install\
     qlvideo\
 
 #Generic Apps
-brew cask install\
+brew install --cask\
     anki\
     master-password\
     alfred\
@@ -103,7 +104,7 @@ brew cask install\
     google-backup-and-sync\
     onedrive\
     skype\
-    zoomus\
+    zoom\
     slack\
     discord\
     iina\
@@ -116,10 +117,6 @@ brew cask install\
     cheatsheet\
     #get McGimp instead of gimp
 
-#Filesystem Drivers
-brew cask install osxfuse
-brew install sshfs e2fsprogs #then download https://github.com/gpz500/fuse-ext2/releases
-
 
 gem install jekyll bundler
 
@@ -131,5 +128,4 @@ brew install --HEAD https://raw.githubusercontent.com/LouisBrunner/valgrind-maco
 mkdir ~/.pyenv
 mkdir ~/.pyenv/versions
 ln -s `brew --cellar python`/* ~/.pyenv/versions
-ln -s `brew --cellar python@2`/* ~/.pyenv/versions
 

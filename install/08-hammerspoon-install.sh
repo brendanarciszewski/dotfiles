@@ -1,0 +1,1 @@
+ln -nf ../hammerspoon/init.lua ~/.hammerspoon/init.lua 
