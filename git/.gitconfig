@@ -1,29 +1,39 @@
 [user]
-    email = git@brendanarciszewski.ca
-    name = Brendan Arciszewski
+	email = git@brendanarciszewski.ca
+	name = Brendan Arciszewski
 
 [filter "lfs"]
-    clean = git-lfs clean -- %f
-    smudge = git-lfs smudge -- %f
-    process = git-lfs filter-process
-    required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 
 [core]
-    excludesfile = /Users/brendanarciszewski/.gitignore_global
-    pager = delta
+	excludesfile = /Users/brendanarciszewski/.gitignore_global
+	pager = delta
 
-[delta]
-    syntax-theme = Solarized (dark)
-    line-numbers = true
-    navigate = true
+[pager]
+	branch = false
 
 [interactive]
-    diffFilter = delta --color-only
+	diffFilter = delta --color-only
 
 [diff]
-    colorMoved = default
-    tool = vscode-difftool
+	colorMoved = default
+	tool = vscode-difftool
+
+[commit]
+	template = /Users/brendanarciszewski/.stCommitMsg
 
 [difftool "vscode-difftool"]
-    cmd = code --wait --diff $LOCAL $REMOTE
-
+	cmd = code --wait --diff $LOCAL $REMOTE
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[delta]
+	syntax-theme = Solarized (dark)
+	line-numbers = true
+	navigate = true
