@@ -93,7 +93,6 @@ brew install --cask\
 brew install --cask\
     anki\
     master-password\
-    alfred\
     malwarebytes\
     coconutbattery\
     google-chrome\
