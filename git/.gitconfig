@@ -12,8 +12,20 @@
 	excludesfile = /Users/brendanarciszewski/.gitignore_global
 	pager = delta
 
+[alias]
+	aliases = config --get-regexp "^alias\\."
+	staged = diff --staged
+	amend = commit --amend
+	contains = merge-base --is-ancestor
+	publish = "!git push -u origin $(git rev-parse --abbrev-ref HEAD)"
+	all = "!find . -type d -name .git -prune -execdir pwd ';' -execdir git $@ ';' #" # https://stephencoakley.com/2019/02/13/handy-git-aliases
+	create = checkout -b
+	reset = checkout -B
+
+# speed up output
 [pager]
 	branch = false
+	aliases = false
 
 [interactive]
 	diffFilter = delta --color-only
