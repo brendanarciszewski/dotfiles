@@ -25,6 +25,13 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=10,underline"
 export SHELDON_CONFIG_DIR=$DOTFILES/sheldon
 source <(sheldon source)
 
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
 FD_OPTIONS="--follow --exclude .git"
 export FZF_DEFAULT_OPTS='--layout=reverse --multi --info=inline'
 export FZF_DEFAULT_COMMAND="git ls-files --caches --others --exclude-standard | fd --type f --type l $FD_OPTIONS"
