@@ -22,14 +22,13 @@ brew install\
     irssi\
     watch\
 
-brew tap cjbassi/ytop
 brew install\
     sd\
     dust\
     ripgrep\
     tokei\
     hyperfine\
-    ytop\
+    cjbassi/ytop/ytop\
     tealdeer\
     bandwhich\
     zoxide\
@@ -42,6 +41,8 @@ brew install\
     nushell\
     freerdp\
     shfmt\
+    ducaale/ht-rs/ht-rs\
+    interactive-rebase-tool\
     fzf\
 
 brew install\

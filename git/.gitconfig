@@ -34,6 +34,9 @@
 	colorMoved = default
 	tool = vscode-difftool
 
+[sequence]
+	editor = interactive-rebase-tool
+
 [commit]
 	template = /Users/brendanarciszewski/.stCommitMsg
 
