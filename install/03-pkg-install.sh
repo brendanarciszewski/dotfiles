@@ -42,6 +42,7 @@ brew install\
     nushell\
     freerdp\
     shfmt\
+    fzf\
 
 brew install\
     pdftk-java\

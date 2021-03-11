@@ -24,3 +24,13 @@ eval "$(pyenv init -)"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=10,underline"
 export SHELDON_CONFIG_DIR=$DOTFILES/sheldon
 source <(sheldon source)
+
+FD_OPTIONS="--follow --exclude .git"
+export FZF_DEFAULT_OPTS='--layout=reverse --multi --info=inline'
+export FZF_DEFAULT_COMMAND="git ls-files --caches --others --exclude-standard | fd --type f --type l $FD_OPTIONS"
+export FZF_CTRL_T_COMMAND="fd $FD_OPTIONS"
+export FZF_ALT_C_COMMAND="fd --type d $FD_OPTIONS"
+source "${XDG_CONFIG_HOME}"/fzf/fzf.zsh
+alias fzf="fzf --preview \"bat --color=always --style=numbers {}\""
+bindkey '^Z' fzf-cd-widget
+bindkey -s '^O' '${EDITOR} $(fzf)^M'
