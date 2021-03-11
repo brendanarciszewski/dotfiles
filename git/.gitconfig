@@ -37,9 +37,6 @@
 [sequence]
 	editor = interactive-rebase-tool
 
-[commit]
-	template = /Users/brendanarciszewski/.stCommitMsg
-
 [difftool "vscode-difftool"]
 	cmd = code --wait --diff $LOCAL $REMOTE
 [delta]
