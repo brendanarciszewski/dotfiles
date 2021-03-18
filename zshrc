@@ -10,7 +10,7 @@ alias gpg="gpg2" #Git fix
 CXX_WARN="-Wall -Wextra -Wconversion -Wunreachable-code -Wuninitialized -Wold-style-cast -pedantic-errors -Wshadow -Wfloat-equal -Weffc++ -Wmost -Wno-error=unused-variable" #https://github.com/mapbox/cpp/issues/37
 alias cl++="clang++ -std=c++17 ${CXX_WARN} -fsanitize=undefined,address -fno-omit-frame-pointer -g -O1"
 #CUSTOMIZATION
-alias ls="gls --color=auto"
+alias ls="exa"
 alias vim="nvim"
 alias vi="vim"
 alias dvipdf="dvipdfmx"
@@ -41,3 +41,46 @@ source "${XDG_CONFIG_HOME}"/fzf/fzf.zsh
 alias fzf="fzf --preview \"bat --color=always --style=numbers {}\""
 bindkey '^Z' fzf-cd-widget
 bindkey -s '^O' '${EDITOR} $(fzf)^M'
+
+dashed-sep() {
+  local after=$1; shift
+  local args=()
+  pos=$@[(I)--]
+  [ $pos -gt 0 ] && args=(${@[@]:$pos+1}) && pos=$(($# - $pos + 1))
+  eval $after'=(${args[@]})'
+}
+
+code-lldb() {
+  local pos=0
+  local prog_args=()
+  dashed-sep prog_args $@; shift -p $pos
+  local prog="'$(pwd)/${prog_args[1]}'"; shift prog_args
+  local args="[]"
+  if [ -n "${prog_args[1]}" ]; then
+    args="['${prog_args[1]}'"; shift prog_args
+    while [ -n "${prog_args[1]}" ]; do
+      args="$args,'${prog_args[1]}'"; shift prog_args
+    done
+    args="$args]"
+  fi
+  local config=""
+  local print=0
+  while [ -n "$1" ]; do
+    if [ "--pause" = "$1" ]; then
+      shift
+      config="$config,'stopOnEntry':true"
+    elif [ "--print" = "$1" ]; then
+      shift
+      print=1
+    else
+      echo "Unknown arg: $1"
+      shift
+    fi
+  done
+  local line="vscode://vadimcn.vscode-lldb/launch/config?{'cwd':'$(pwd)','program':$prog,'args':$args$config}"
+  if [ $print -eq 1 ]; then
+    echo $line
+  else
+    code --open-url $line
+  fi
+}
